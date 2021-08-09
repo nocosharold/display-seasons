@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDisplay from './Components/SeasonDisplay';
+import './index.css';
 
 class App extends React.Component {
     // Just a JS method, not specific to React.
@@ -31,7 +32,7 @@ class App extends React.Component {
     render() {
         return (
             <>
-                <SeasonDisplay latitude={ this.state.latitude } error={ this.state.error } />
+                <SeasonDisplay className="" latitude={ this.state.latitude } error={ this.state.error } />
             </>
         );
     };

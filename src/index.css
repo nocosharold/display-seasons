@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0b241 !important;
+}
+
+#icon_top,
+#icon_bottom {
+    font-size: 68px;
+    line-height: 88px;
+    color: #e74326;
+}
+
+#icon_bottom {
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
