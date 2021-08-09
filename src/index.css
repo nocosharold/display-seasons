@@ -12,7 +12,14 @@ body {
 #icon_bottom {
     font-size: 68px;
     line-height: 88px;
+}
+
+.sun {
     color: #e74326;
+}
+
+.snowflake {
+    color: #fff;
 }
 
 #icon_bottom {

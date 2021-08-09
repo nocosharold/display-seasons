@@ -6,29 +6,28 @@ class SeasonDisplay extends React.Component{
         let latitude = this.props.latitude;
         let month = new Date().getMonth();
         let season = null;
-        const icon = season === 'winter' ? 'snowflake' : 'sun';
 
-        if(latitude > 0){
+        if(latitude >= 0){
             if( month >= 3 || month <= 8 ){
-                season = "Summer";
+                season = "summer";
             }
             else {
-                season = "Winter";
+                season = "winter";
             }
         }
         else if(latitude < 0){
             if( month >= 9 || month <= 2 ){
-                season = "Summer";
+                season = "summer";
             }
             else {
-                season = "Winter";
+                season = "winter";
             }
         }
-
+        let icon = season === 'winter' ? 'snowflake' : 'sun';
         return(
             <>
                 <i className={`${icon} icon` } id="icon_top" />
-                <i className={`${icon} icon `} id="icon_bottom" />
+                <i className={`${icon} icon`} id="icon_bottom" />
                 { this.props.error !== null &&  <h1>{ this.props.error }</h1>}
                 { season !== null &&  <h1>It is currently { season } here</h1> }
             </>
