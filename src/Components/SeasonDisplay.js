@@ -23,12 +23,12 @@ class SeasonDisplay extends React.Component{
                 season = "winter";
             }
         }
-        let icon = season === 'winter' ? 'snowflake' : 'sun';
+        const icon = season === 'winter' ? 'snowflake' : 'sun';
         return(
             <>
                 <i className={`${icon} icon` } id="icon_top" />
                 <i className={`${icon} icon`} id="icon_bottom" />
-                { this.props.error !== null &&  <h1>{ this.props.error }</h1>}
+                { this.props.error !== 'User denied Geolocation' &&  <h1>{ this.props.error }</h1>}
                 { season !== null &&  <h1>It is currently { season } here</h1> }
             </>
         );

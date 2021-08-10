@@ -1,7 +1,7 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -22,15 +22,27 @@ body {
     color: #fff;
 }
 
-#icon_bottom {
+#spinner {
+    display: block;
+    margin: 20% 0;
+    text-align: center;
+}
+
+#icon_top {
+    left: 0;
     position: absolute;
+    top: 0px;
+}
+
+#icon_bottom {
     bottom: 25px;
+    position: absolute;
     right: 0;
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
+.container {
     align-items: center;
+    display: flex;
     height: 75vh;
+    justify-content: center;
 }
